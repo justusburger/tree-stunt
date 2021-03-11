@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { GlobalStyles } from "./components/GlobalStyles";
+import { QueryClient, QueryClientProvider } from "react-query";
+import Home from "./containers/Home";
+
+const client = new QueryClient();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={client}>
+      <CssBaseline />
+      <GlobalStyles />
+      <Home />
+    </QueryClientProvider>
   );
 }
 
-export default App;
+export default React.memo(App);
