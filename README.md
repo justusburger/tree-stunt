@@ -4,4 +4,4 @@ This project is meant to demonstrate that I do, in fact, know a little react. It
 
 ## Demo
 
-[https://justusburger.github.com/tree-stunt](https://justusburger.github.com/tree-stunt)
+[https://justusburger.github.io/tree-stunt/](https://justusburger.github.io/tree-stunt/)

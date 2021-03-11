@@ -4,7 +4,7 @@
  * we would obviously replace the URL to point to the API.
  * */
 export function getActors() {
-  return fetch("/actors.json").then((r) => {
+  return fetch(`/tree-stunt/actors.json`).then((r) => {
     if (!r.ok) throw new Error(r.statusText);
     return r.json();
   });
